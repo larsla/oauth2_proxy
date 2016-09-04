@@ -1,5 +1,5 @@
 # oauth2_proxy
-A docker image with oauth2_proxy and a wrapper to simplyfy running it.
+A docker image with https://github.com/bitly/oauth2_proxy and a wrapper to simplify running it.
 
 ## usage
 ### gitlab (cloud service)
