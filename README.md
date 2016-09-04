@@ -3,11 +3,13 @@ A docker image with oauth2_proxy and a wrapper to simplyfy running it.
 
 ## usage
 ### gitlab (cloud service)
+```
 docker run -d -p 4180:4180 \  
   -e PROVIDER="gitlab" \  
   -e CLIENT_ID="application id" -e CLIENT_SECRET="secret" \  
   -e EMAIL_DOMAIN="example.com" \  
   larsla/oauth2_proxy  
+```
 
 ### gitlab (self hosted)
 ```
