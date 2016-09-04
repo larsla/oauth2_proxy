@@ -10,22 +10,27 @@ docker run -d -p 4180:4180 \
   larsla/oauth2_proxy  
 
 ### gitlab (self hosted)
+```
 docker run -d -p 4180:4180 \  
   -e PROVIDER="gitlab" \  
   -e CLIENT_ID="application id" -e CLIENT_SECRET="secret" \  
   -e EMAIL_DOMAIN="example.com" \  
   -e GITLAB_URL="https://gitlab.example.com" \  
-  larsla/oauth2_proxy  
+  larsla/oauth2_proxy
+```
 
 ### github
+```
 docker run -d -p 4180:4180 \  
   -e PROVIDER="github" \  
   -e CLIENT_ID="application id" -e CLIENT_SECRET="secret" \  
   -e GITHUB_ORG="myorg" -e GITHUB_TEAM="developers" \  
   -e EMAIL_DOMAIN="example.com" \  
   larsla/oauth2_proxy  
+```
 
 ### github enterprise
+```
 docker run -d -p 4180:4180 \  
   -e PROVIDER="github" \  
   -e CLIENT_ID="application id" -e CLIENT_SECRET="secret" \  
@@ -33,8 +38,10 @@ docker run -d -p 4180:4180 \
   -e EMAIL_DOMAIN="example.com" \  
   -e GITHUB_URL="https://github.example.com"  
   larsla/oauth2_proxy  
+```
 
 ### google
+```
 docker run -d -p 4180:4180 \  
   -v /path/to/service_account.json:/google/service_account.json  \
   -e PROVIDER="google" \  
@@ -43,6 +50,7 @@ docker run -d -p 4180:4180 \
   -e EMAIL_DOMAIN="example.com" \  
   -e GOOGLE_ACCOUNT_JSON="/google/service_account.json"
   larsla/oauth2_proxy  
+```
 
 
 ## nginx config
